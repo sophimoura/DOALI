@@ -1,0 +1,176 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #001433;
+    margin: 0;
+    padding: 0;
+}
+ 
+.container {
+    max-width: 90%;
+    margin: 0px auto;
+    padding: 0 20px;
+    text-align: center; 
+}
+
+.card {
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    align-content:center; 
+
+}
+
+
+.boas-vindas-card{
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin: 15px auto; 
+    padding: 30px 70px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    align-content:center;
+}
+.titulointr {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #F0BB32;
+  font-weight: normal;
+}
+
+.descricao {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+
+}
+
+.btn {
+    border-radius: 50px;
+    align-content:center;
+
+}
+
+.btn-warning {
+    background-color: #F0BB32;
+    color: white;
+
+}
+
+.btn-warning:hover {
+    background-color: #F0BB32;
+    color:#293951;
+  
+}
+
+.texto{
+    font-size: 18px;
+    color:  #004cff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.row .col-md-4 {
+    margin-bottom: 20px;
+}
+
+.row .col-md-4 .card {
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #F0BB32;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #001433;
+
+}
+
+.titulo-recurso {
+    font-size: 16px;
+    text-align: center;
+   
+}
+
+.descricao-recurso {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.descricao-recurso1{
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffffff;
+  
+}
+
+.linhaSeparadora {
+    margin: 15px auto;
+    width: 70%;
+    border-top: 2px solid #538be0;
+  
+}
+
+.titulo-cadastro, .titulo-login {
+    font-size: 25px;
+    color: #538be0;
+    margin-bottom: 20px;
+}
+
+.form-label { 
+    font-weight: 600;
+    color: #538be0;
+    font-size: 15px;
+    text-align:left; 
+}
+
+.form-control {
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background-color: #f9f9f9;
+}
+
+.btn-warning { 	
+    width: 80%;
+    padding: 5px;
+    border-radius: 50px;
+    align-content:center;
+    font-size: 15px;
+   
+}
+
+.container mt-5{ 
+  padding: 20px 10px;
+  text-align: center; 
+}
+
+.col-md-6{
+  width: 90%;
+  margin-bottom: 0px; 
+}
+  
+
+.mb-3{
+  text-align:left;
+}
+
+
+
+.esqueci{
+  margin: 10px auto;
+  text-align:right;
+}
+.link{
+  color:#004cff;
+  font-size:15px;
+  text-decoration:none;
+  line-height: 1.5;
+}
+
+.link:hover{
+  color:#1a294c;
+  font-size:15px;
+  text-decoration:none;
+}
+

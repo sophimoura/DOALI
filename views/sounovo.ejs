@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Sou Novo Aqui - Doali</title>
+    <link rel="stylesheet" href="stylesheets/sounovo.css">
+  
+</head>
+
+
+<body>
+  
+  <%- include('./partials/header') %>
+
+    <!-- Boas-vindas -->
+
+    <div class="container">
+        <div class="card">
+            <h2 class="titulo">Bem-vindo ao Doali!</h2>
+            <p class="descricao">
+            O Doali conecta doadores com instituições de causas sociais. Explore o site para descobrir projetos e apoiar as causas que você valoriza. </p>
+    
+        </div>
+    </div>
+
+    <!--Doadores -->
+    <div class="container">
+        
+        <div class="row">
+            <div class="col">
+                <div class= "card doadores-card">
+                    <h3 class="subtitulo" id='subtitulo1' >Orientações para os Doadores</h3>
+                    <h4 class="card-title">Explorar Instituições:</h4>
+                    <p class="card-descricao">
+                        Busque instituições por categorias ou localização para apoiar as causas que mais importam para você.
+                    </p>
+              
+        
+                    <h4 class="card-title" >Detalhes dos projetos:</h4>
+                    <p class="card-descricao">
+                        Verifique detalhes sobre os projetos das instituições e seus objetivos antes de doar.
+                    </p>
+            
+           
+           
+                    <h4 class="card-title">Contate as Instituições:</h4>
+                    <p class="card-descricao">
+                        Entre em contato com as instituições para obter mais informações ou contribuir para projetos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instituições -->
+    <div class="container">
+        
+        <div class="row">
+            <div class="col">
+                <div class="card instituicoes-card">
+                   <h3 class="subtitulo" id='subtitulo2'>Orientações para as Instituições</h3>
+                    <h4 class="card-title">Cadastre-se:</h4>
+                    <p class="card-descricao">
+                        Cadastre sua instituição e compartilhe seus projetos com nossa comunidade de doadores engajados. </p>
+              
+                    <h4 class="card-title">Conecte-se com Doadores:</h4>
+                    <p class="card-descricao">
+                        Conecte-se com doadores interessados em suas causas e estabeleça parcerias duradouras.
+                    </p>
+               
+                    <h4 class="card-title">Mais Informações:</h4>
+                    <p class="card-descricao">Visite a nossa página dedicada as<a class= "link-inst" href="/instituicao">Instituições Receptoras</a> para obter mais informações sobre como maximizar seu impacto.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer>
+        <%- include('./partials/footer') %>
+    </footer>
+
+</body>
+
+</html>
