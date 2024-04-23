@@ -1,0 +1,94 @@
+
+body {
+    margin: 0;
+    padding-top: 70px; 
+    font-family: 'Poppins', sans-serif;
+    background-color: #001433; 
+}
+
+.container{
+  max-width: 90%;  
+  margin: 0px auto;
+  padding: 0 20px;
+  dispaly: flex;
+}
+
+
+.frase {
+    margin: 25px auto;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+
+.linhaSeparadora {
+    margin: 15px auto;
+    width: 50%;
+    border-top: 2px solid #538be0;
+}
+
+
+.carousel {
+    margin: 0 auto; 
+    width: 80%; 
+    border-radius: 25px; 
+}
+
+.carousel-inner {
+    height: 400px; 
+}
+
+
+.carousel-item img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 20px; 
+}
+
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; 
+    color: #000000;
+}
+
+
+
+.containerImagens {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+
+.imagemClicavel {
+    width: 100%; 
+    height: 320px; 
+    object-fit: contain; 
+    border-radius: 10px; 
+    transition: transform 0.3s; 
+    display: block;
+    text-decoration: none;
+}
+
+
+.imagemClicavel:hover {
+    transform: scale(1.05); 
+}
+
+
+@media (max-width: 768px) {
+    
+    .imagemClicavel {
+        height: 150px;
+    }
+
+   
+    .carousel,.containerImagens {
+        width: 100%; 
+        margin: 0 auto; 
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+  <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="/stylesheets/doacoes.css">
+      <title>Doações - Doali</title>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <%- include('./partials/header') %>
+     
+   <div class="container">
+
+     <!--Instruções para Doações-->
+        <div class="card">
+          <h2 class="titulo">Instruções para Doações</h2>
+          <div class="descricao">
+            <p>Aqui você pode econtrar algumas orientações sobre como fazer doações.<br> O Doali surge como uma plataforma de orientação para pessoas interessadas em doar, nós oferecemos ferramentas que podem simplificar esse processo, tornando a prática da doação mais acessível e facilitando o contato entre os doam e os que recebem! </p>
+        </div>
+        </div>
+          <div class="card1">
+            <h2 class="titulo1">Dúvidas que talvez você tenha: </h2>
+            <ul class="lista1">
+              <h4>As roupas que precisam estar em que condição para serem consideradas adequadas para doação?</h4>
+              <li>As roupas doadas devem estar em bom estado e limpas.</li><hr>
+
+              <h4>Que tipo de alimentos são acietos para doação?</h4>
+              <li>Alimentos não perecíveis são bem-vindos.</li><hr>
+            
+              <h4>Além de alimentos, que outros itens podemos doar para ajudar?</h4>
+              <li>Você pode colaborar com brinquedos, roupas, sapatos, utensiílios domésticos em bom estado, tal como produtos de higiene pessoal, entre outros. Esse ponto será definido de acordo com a instituição para qual você deseja doar. </li><hr>
+              
+              <h4>Existe algo que devemos evitar incluir nas nossas doações?</h4>
+              <li>Evite doar itens quebrados ou danificados.</li><hr>
+             
+              <h4>Além de doações físicas, há outra forma de contribuir?</h4>
+              <li>Doações em dinheiro são aceitas e podem ajudar a manter as operações de cada Instituição. Porém, este ponto deve ser abordado com a Instituição para qual você deseja doar. Por isso é tão importante que você, doador, entre em contato com a organização atráves dos canais disponibilizados no Doali. </li><hr>
+              
+              <h4>Há alguma recomendação específica sobre como devemos embalar nossas doações?</h4>
+              <li>Se possível, embale as doações de forma organizada para facilitar o transporte. Mas, é importante lembrar que os pormenores de cada doação devem ser estabelecidos com a Instituição Recptora.Por isso é tão importante que você, doador, entre em contato com a organização atráves dos canais disponibilizados no Doali.  </li><hr>
+             
+              <h4>Qual é o melhor momento para entregar nossas doações?</h4>
+              <li>Confira os horários de recebimento de doações de cada Instituição, antes de planejar sua visita.</li>
+            
+            </ul>
+            </div>
+<!---Passo a passo de como usar o Doali--->
+            <div class="card2">
+              <h2 class="titulo2">Passo a passo de como usar o Doali, para fazer uma doação: </h2>
+              <ul class="lista2">
+                <h4>1° passo:</h4>
+                <li>Separar o que você deseja doar.</li><hr>
+
+                <h4>2° passo:</h4>
+                <li>Acessar o Doali para pesquisa Instituições que podem receber sua doação. Você pode pesquisar por nome ou por localização. </li><hr>
+
+                <h4>3º passo:</h4>
+                <li>Após escolher sua instituição, você deve entrar em contato com os responsáveis para negociar seu processo de doação, como combinar horário, a forma como os materias devem ser doados, etc.</li><hr>
+
+                <h4>4° passo:</h4>
+                <li>Realizar a sua doação planejada com praticidade e proporcionada pelo Doali. </li><hr>
+
+              </ul>
+            </div><hr class="linhaSeparadora">
+
+     <div class="etiqueta">
+       <!-- Etiqueta 1 -->
+       <div class="etiqueta-card">
+         <img src="/images/roupa.png" alt="Roupa">
+         <div class="etiqueta-info">
+           <h2>Doação de roupas</h2>
+           <p classe="descricaoetiqueta">Ao doar roupas, você não apenas libera espaço no seu guarda-roupa, mas também oferece calor e conforto para aqueles que mais precisam.<br> Suas roupas usadas podem fazer a diferença na vida de alguém, fornecendo vestimentas adequadas para diversas situações e ajudando a promover a autoestima e a dignidade.</p>
+          
+         </div>
+       </div>
+       <!--Etiqueta 2 -->
+       <div class="etiqueta-card">
+         <img src="/images/comida.png" alt="Comida">
+         <div class="etiqueta-info">
+           <h2>Doação de comida</h2>
+           <p classe="descricaoetiqueta">A doação de comida é uma forma essencial de combater a fome e o desperdício alimentar.<br> Ao doar alimentos não perecíveis ou excedentes, você está contribuindo para alimentar famílias em situação de vulnerabilidade e reduzir o impacto ambiental causado pelo descarte inadequado de alimentos.<br> Cada doação conta na luta contra a insegurança alimentar.</p>
+         </div>
+       </div>
+    
+       <!-- Etiqueta 3 -->
+       <div class="etiqueta-card">
+         <img src="/images/caixa.png" alt="Caixa">
+         <div class="etiqueta-info">
+        
+           <h2>Doação de objetos variados</h2>
+           <p  classe="descricaoetiqueta">Doar objetos diversos, como brinquedos, eletrônicos, livros e utensílios domésticos, pode ter um grande impacto positivo.<br> Esses itens podem ser reutilizados por outras pessoas, proporcionando entretenimento, conhecimento ou facilitando suas atividades diárias.<br> Além disso, doar objetos que não são mais necessários também ajuda a reduzir o consumo excessivo e promove um estilo de vida mais sustentável. Cada doação contribui para a construção de uma comunidade mais solidária e consciente.</p> 
+       </div>
+     </div>
+   </div>
+   </div> 
+  
+ <footer><%- include('./partials/footer') %></footer>
+    <link rel='stylesheet' href='/stylesheets/footer.css'/>
+  </body>
+
+</html>

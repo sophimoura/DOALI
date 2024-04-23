@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil da Instituição - Doali</title>
+    <link rel="stylesheet" href="/stylesheets/receptor.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    
+    <header>
+        <%- include('./partials/header') %>
+    </header>
+
+    <main class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+        <form id="profile-form" class="profile-form" style="max-width: 800px; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+            <h2 class="title">Perfil da Instituição</h2>
+
+            <!-- Foto da instituição -->
+            <div class="profile-photo mb-4">
+                <label for="photo">
+                    <img src="/images/perfil1.jpg" alt="Foto da Instituição" class="institution-photo" id="photo-preview">
+                    <input type="file" id="photo" name="photo" class="d-none" accept="image/*">
+                </label>
+            </div>
+
+            <!--Informações pessoais -->
+            <div class="info-section row">
+                
+                <div class="form-group col-md-6 mb-4">
+                    <label for="institution-name">Nome:</label>
+                    <input type="text" id="institution-name" name="institution-name" class="form-control" value="Nome da Instituição" required>
+                </div>
+
+                <div class="form-group col-md-6 mb-4">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" class="form-control" value="email@example.com" required>
+                </div>
+
+                <div class="form-group col-md-6 mb-4">
+                    <label for="contact">Contato:</label>
+                    <input type="text" id="contact" name="contact" class="form-control" value="(123) 456-7890" required>
+                </div>
+
+                <div class="form-group col-md-6 mb-4">
+                    <label for="location">Localização:</label>
+                    <input type="text" id="location" name="location" class="form-control" value="Localização" required>
+                </div>
+
+                <div class="form-group col-md-6 mb-4">
+                    <label for="social-project">Projeto Social:</label>
+                    <textarea id="social-project" name="social-project" class="form-control" rows="3" required>Breve descrição do projeto social.</textarea>
+                </div>
+
+                <div class="form-group col-md-6 mb-4">
+                    <label for="manager">Gerente:</label>
+                    <input type="text" id="manager" name="manager" class="form-control" value="Nome do Gerente" required>
+                </div>
+            </div>
+
+            <!--Salvar alterações -->
+            <div class="button-container text-center mt-4">
+                <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+            </div>
+
+            <!--Sair da conta -->
+            <div class="logout-container text-right mt-4">
+                <a href="/" id="logout-button" class="btn btn-warning">Sair da Conta</a>
+            </div>
+        </form>
+    </main>
+
+  
+    <footer>
+        <%- include('./partials/footer') %>
+    </footer>
+
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
