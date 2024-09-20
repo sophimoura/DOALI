@@ -1,0 +1,48 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+}
+
+
+.title {
+    color: #538be0;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 20px;
+    border: 3px solid #F0BB32;
+    border-radius: 50px;
+}
+
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.institution-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #004cff;
+    cursor: pointer;
+}
+
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
