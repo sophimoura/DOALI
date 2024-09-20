@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title><%= instituicao.nome %></title>
+  <link rel="stylesheet" href="/stylesheets/instituicao-details.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1><%= instituicao.nome %></h1>
+    
+    <div class="card">
+      <p><strong>Email:</strong> <%= instituicao.email %></p>
+      <p><strong>Contato:</strong> <%= instituicao.contato %></p>
+      <p><strong>Localização:</strong> <%= instituicao.localizacao %></p>
+      <p><strong>Projeto Social:</strong> <%= instituicao.projetoSocial %></p>
+      <p><strong>Gerente:</strong> <%= instituicao.gerente %></p>
+    </div>
+
+    <h3>Editar Instituição</h3>
+    <div class="card">
+      <form action="/instituicao/editar/<%= instituicao._id %>" method="POST">
+        <label>Nome:</label>
+        <input type="text" name="nome" value="<%= instituicao.nome %>" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" value="<%= instituicao.email %>" required>
+
+        <label>Contato:</label>
+        <input type="text" name="contato" value="<%= instituicao.contato %>" required>
+
+        <label>Localização:</label>
+        <input type="text" name="localizacao" value="<%= instituicao.localizacao %>" required>
+
+        <label>Projeto Social:</label>
+        <input type="text" name="projetoSocial" value="<%= instituicao.projetoSocial %>" required>
+
+        <label>Gerente:</label>
+        <input type="text" name="gerente" value="<%= instituicao.gerente %>" required>
+
+        <button type="submit">Salvar Alterações</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <form action="/instituicao/excluir/<%= instituicao._id %>" method="POST">
+        <button type="submit" class="btn btn-danger">Excluir Instituição</button>
+      </form>
+    </div>
+
+    <!-- Botão de Voltar -->
+    <div class="back-button">
+      <a href="/instituicao" class="btn btn-secondary">Voltar</a>
+    </div>
+  </div>
+
+  <%- include('./partials/footer') %>
+</body>
+</html>

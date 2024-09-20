@@ -1,0 +1,102 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Inputs e Botões */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #006eff;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #006eff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #006eff;
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 16px;
+    color: #666;
+  }
+  
+  a {
+    color: #006eff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .back-button {
+    background-color: #ccc; /* Cor do botão de voltar */
+    color: #333;
+    margin-top: 10px; /* Espaço acima do botão */
+    padding: 10px; /* Ajustado para ser consistente */
+    width: 100%; /* Mantém a largura total */
+  }
+  
+  .back-button:hover {
+    background-color: #bbb; /* Cor ao passar o mouse */
+  }
+  

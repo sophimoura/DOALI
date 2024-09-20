@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login de Instituição</title>
+  <link rel="stylesheet" href="/stylesheets/auth.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Login de Instituição</h1>
+    <form action="/login" method="POST">
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" name="senha" id="senha" required>
+
+      <button type="submit">Login</button>
+    </form>
+    <p>Não tem uma conta? <a href="/cadastrar">Cadastre-se</a></p>
+
+    <!-- Botão para voltar para a página de instituições -->
+    <form action="/instituicao" method="GET">
+      <button type="submit" class="back-button">Voltar para Instituições</button>
+    </form>
+  </div>
+
+</body>
+</html>

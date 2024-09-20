@@ -20,7 +20,10 @@
                 Participe de nossa plataforma para conectar-se diretamente com doadores que apoiam suas causas.
             </p>
             <div class="text-center">
-                <a href="#cadastro-login-form" class="btn btn-warning btn-lg">Cadastre-se ou Faça Login</a>
+                <a href="/cadastrar" class="btn btn-warning btn-lg">Cadastre-se</a>
+            </div>
+            <div class="text-center"></div>
+                <a href="/login" class="btn btn-warning btn-lg">Faça Login</a>
             </div>
         </div>
     
@@ -69,69 +72,12 @@
      <hr class="linhaSeparadora">
 </div>
 
-    <!--Cadastro e login -->
-    <div class="container mt-5" id="cadastro-login-form">
-        <div class="row justify-content-center">
+  
 
 
-          <!-- Cadastro -->
-            <div class="col-lg-6 col-md-6">
-                <div class="card p-4 shadow-sm rounded-3 bg-light">
-                    <h3 class="titulo-cadastro text-primary text-center mb-4">Cadastre sua Instituição:</h3>
-                    <form action="/cadastrar-instituicao" method="POST">
-                        <div class="mb-3">
-                            <label for="nome-instituicao" class="form-label text-start">Nome da Instituição:</label>
-                            <input type="text" class="form-control" id="nome-instituicao" name="nome" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label text-start">E-mail:</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="senha" class="form-label text-start">Senha:</label>
-                            <input type="password" class="form-control" id="senha" name="senha" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="contato" class="form-label text-start">Contato:</label>
-                            <input type="text" class="form-control" id="contato" name="contato" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="localizacao" class="form-label text-start">Localização:</label>
-                            <input type="text" class="form-control" id="localizacao" name="localizacao" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="projeto-social" class="form-label text-start">Projeto Social:</label>
-                            <textarea class="form-control" id="projeto-social" name="projeto-social" rows="3" required></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="gerente" class="form-label text-start">Gerente da Instituição:</label>
-                            <input type="text" class="form-control" id="gerente" name="gerente" required>
-                        </div>
-                        <button type="submit" class="btn btn-warning">Cadastrar</button>
-                    </form>
-                </div>
-            </div>
     
             <!-- Login -->
         
-            <div class="col-lg-6 col-md-6">
-                <div class="card p-4 shadow-sm rounded-3 bg-light">
-                    <h3 class="titulo-login text-primary text-center mb-4">Acesse sua conta:</h3>
-                    <form action="/login-instituicao" method="POST">
-                        <div class="mb-3">
-                          <label for="email-login" class="form-label text-start">E-mail:</label>
-                          <input type="email" class="form-control" id="email-login" name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="senha-login" class="form-label text-start">Senha:</label>
-                            <input type="password" class="form-control" id="senha-login" name="senha" required>
-                        </div>
-                      <p class="esqueci"><a class= "link" href="/ajuda">Esqueci minha senha :(</a></p>
-                      <a href="/receptor" class="btn btn-warning">Entrar</a>
-                      
-                    </form>
-                  </div>
-            </div>
           
         </div>
 

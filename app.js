@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var session = require('express-session');
 
 var indexRouter = require('./routes/index');
 var doacoesRouter = require('./routes/doacoes');
@@ -11,9 +12,25 @@ var sounovoRouter = require('./routes/sounovo');
 var doadorRouter= require('./routes/doador');
 var instituicaoRouter = require('./routes/instituicao');
 var receptorRouter = require('./routes/receptor');
+var cadastroRouter = require('./routes/cadastro');
+var loginRouter = require('./routes/login');
+var gerenciamentoRouter = require('./routes/gerenciamento');
+
+var connectDB = require('./db'); // Importa o arquivo de conexão com o Mongo
+connectDB(); // Chama a função de conexão
+
+
 
 
 var app = express();
+
+// Configuração do middleware de sessão
+app.use(session({
+  secret: 'hahaha', // Altere para um segredo forte
+  resave: false,
+  saveUninitialized: true,
+  cookie: { secure: false } // Para desenvolvimento, defina como false
+}));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -32,6 +49,9 @@ app.use('/sounovo', sounovoRouter);
 app.use('/doador', doadorRouter);
 app.use('/instituicao',instituicaoRouter);
 app.use('/receptor',receptorRouter);
+app.use('/cadastrar', cadastroRouter);
+app.use('/login', loginRouter);
+app.use('/instituicao', gerenciamentoRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

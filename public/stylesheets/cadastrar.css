@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5; /* Cor de fundo suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Largura responsiva */
+    max-width: 600px; /* Largura máxima */
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px; /* Tamanho do título */
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 15px; /* Espaçamento entre os campos */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: 500; /* Peso da fonte do label */
+    color: #555; /* Cor do texto do label */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s; /* Transição suave na borda */
+}
+
+input:focus {
+    border-color: #80bdff; /* Cor ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+button {
+    padding: 12px;
+    background-color: #006eff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px; /* Espaço acima do botão */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+button:hover {
+    background-color: #0056cc; /* Cor ao passar o mouse */
+}
+
+p {
+    margin-top: 20px;
+    color: #666;
+}
+
+a {
+    color: #006eff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Adiciona responsividade */
+@media (max-width: 480px) {
+    .form-grid {
+        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+    }
+}
+
+.back-button {
+    background-color: #ccc; /* Cor do botão de voltar */
+    color: #333;
+    margin-top: 10px; /* Espaço acima do botão */
+    padding: 10px; /* Ajustado para ser consistente */
+    width: 100%; /* Mantém a largura total */
+  }
+  
+  .back-button:hover {
+    background-color: #bbb; /* Cor ao passar o mouse */
+  }
