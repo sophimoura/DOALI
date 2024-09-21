@@ -16,6 +16,7 @@ var cadastroRouter = require('./routes/cadastro');
 var loginRouter = require('./routes/login');
 var gerenciamentoRouter = require('./routes/gerenciamento');
 var buscarRouter = require('./routes/buscar');
+var detailsInstRouter = require('./routes/detailsInst');
 
 var connectDB = require('./db'); // Importa o arquivo de conexão com o Mongo
 connectDB(); // Chama a função de conexão
@@ -54,6 +55,7 @@ app.use('/cadastrar', cadastroRouter);
 app.use('/login', loginRouter);
 app.use('/instituicao', gerenciamentoRouter);
 app.use('/buscar', buscarRouter);
+app.use('/instituicoes', detailsInstRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
