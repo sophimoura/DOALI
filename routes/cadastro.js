@@ -1,7 +1,18 @@
 // routes/cadastro.js
 var express = require('express');
+const multer = require('multer');
 var router = express.Router();
 const Instituicao = require('../models/Instituicao');
+
+// Configuração do multer
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, 'uploads/'); // Pasta onde as imagens serão salvas
+    },
+    filename: (req, file, cb) => {
+        cb(null, Date.now() + '-' + file.originalname); // Nome do arquivo
+    }
+});
 
 
 router.get('/', function(req, res, next) {

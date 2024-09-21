@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
@@ -8,106 +7,48 @@
 </head>
 
 <body>
-  
     <%- include('./partials/header') %>
     
     <div class="container">
-
-    <!--Boas vindas-->
-      <div class="boas-vindas-card card">
-    
-          <h2 class="titulointr">Bem-vindo, Doador Paceiro!</h2>
-          <h3 class="descricao">Vamos falar um pouco da importância do seu papel no Doali.</h3>
-
-          <div class="boas-vindas"><hr>
-
-            <p>O papel do doador no Doali é fundamental para promover uma cultura de solidariedade e apoio mútuo. No coração desse processo está a capacidade do doador de usar o site como uma ferramenta valiosa para encontrar locais onde suas doações podem fazer a diferença. O Doali atua como um facilitador, fornecendo uma lista abrangente de opções de organizações e instituições que aceitam doações de diversos tipos.</p>
-
-            <p>O doador desempenha um papel ativo ao utilizar o Doali como uma fonte confiável de informações, pesquisando por categorias específicas de itens que deseja doar. Seja roupas em bom estado, alimentos não perecíveis, produtos de higiene pessoal ou outros itens essenciais, o doador pode contar com o Doali para fornecer uma lista de locais próximos onde suas doações serão bem recebidas e utilizadas de maneira eficaz.</p>
-
-            <p>É importante ressaltar que, embora o Doali forneça as informações necessárias para facilitar a busca e esclarecer dúvidas sobre onde doar, o contato e a iniciativa de realizar a doação partem inteiramente do doador. O Doali atua como um intermediário, conectando doadores a instituições de caridade, abrigos, organizações sem fins lucrativos e outros locais que dependem da generosidade da comunidade para atender às necessidades daqueles que mais precisam.</p>
-
-            <p>Portanto, o papel do doador no Doali é de vital importância para garantir que as doações alcancem aqueles que realmente necessitam delas. Ao usar o site como uma ferramenta para encontrar locais de doação e tomar a iniciativa de entrar em contato e realizar as doações, os doadores desempenham um papel significativo na construção de uma sociedade mais solidária e compassiva.</p>
-
-        </div><hr>
-
-      </div>
-      <!-- Barra de pesquisa -->
-      <div class="search-bar">
-        <input type="text" placeholder="Pesquisar Instituição por nome ou por localização...">
-        <select id="filter-select">
-          <option value="local">Localização</option>
-          <option value="nome">Nome</option>
-        </select>
-        <button type="submit"><i class="fas fa-search"></i>Buscar</button>
-      </div>
-
-      <!-- Lista de perfis -->
-      <div class="profiles">
-        <!-- Perfil 1 -->
-        <div class="profile-card">
-          <img src="/images/perfil1.jpg" alt="Perfil 1">
-          <div class="profile-info">
-            <h2 classe="nomeinst">Nome da Instituição 1</h2>
-            <div classe="lista">
-            <p><strong>Localização: </strong>Local 1</p>
-            <p><strong>Email: </strong>email1@example.com</p>
-            <p><strong>Contato:</strong>(123) 456-7890</p>
-            <p><strong>Gerente:</strong> Gerente 1</p>
-            <p><strong>Descrição:</strong>Breve descrição da instituição 1</p>
+        <!-- Boas vindas -->
+        <div class="boas-vindas-card card">
+            <h2 class="titulointr">Bem-vindo, Doador Parceiro!</h2>
+            <h3 class="descricao">Vamos falar um pouco da importância do seu papel no Doali.</h3>
+            <div class="boas-vindas"><hr>
+                <p>O papel do doador no Doali é fundamental para promover uma cultura de solidariedade e apoio mútuo...</p>
             </div>
-          </div>
         </div>
-        <!-- Perfil 2 -->
-        <div class="profile-card">
-          <img src="/images/perfil2.jpg" alt="Perfil 2">
-          <div class="profile-info">
-            <div classe="lista">
-            <h2 classe="nomeinst">Nome da Instituição 2</h2>
-            <p><strong>Localização: </strong>Local 2</p>
-            <p><strong>Email: </strong>email1@example.com</p>
-            <p><strong>Contato:</strong>(123) 456-7890</p>
-            <p><strong>Gerente:</strong> Gerente 2</p>
-            <p><strong>Descrição:</strong>Breve descrição da instituição 2.
-          </div>
-        </div>
-        </div>
-        <!-- Perfil 3 -->
-        <div class="profile-card">
-          <img src="/images/perfil3.jpg" alt="Perfil 3">
-          <div class="profile-info">
-            <div classe="lista">
-            <h2 classe="nomeinst">Nome da Instituição 3</h2>
-            <p><strong>Localização: </strong>Local 3</p>
-            <p><strong>Email: </strong>email1@example.com</p>
-            <p><strong>Contato:</strong>(123) 456-7890</p>
-            <p><strong>Gerente:</strong> Gerente 3</p>
-            <p><strong>Descrição:</strong>Breve descrição da instituição 3.
-          </div>
-        </div>
-      </div>
 
-        <div class="profile-card">
-          <img src="/images/perfil1.jpg" alt="Perfil 1">
-          <div class="profile-info">
-            <h2 classe="nomeinst">Nome da Instituição 4</h2>
-            <div classe="lista">
-            <p><strong>Localização: </strong>Local 4</p>
-            <p><strong>Email: </strong>email1@example.com</p>
-            <p><strong>Contato:</strong>(123) 456-7890</p>
-            <p><strong>Gerente:</strong> Gerente 4</p>
-            <p><strong>Descrição:</strong>Breve descrição da instituição 1</p>
-            </div>
-          </div>
+        <!-- Barra de pesquisa -->
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar Instituição por nome ou por localização...">
+            <select id="filter-select">
+                <option value="localizacao">Localização</option>
+                <option value="nome">Nome</option>
+            </select>
+            <button type="button">Buscar</button>
         </div>
-        
+
+        <!-- Lista de perfis -->
+        <div class="profiles">
+            <% instituicoes.forEach(instituicao => { %>
+                <div class="profile-card">
+                  <img src="<%= instituicao.foto %>" alt="Imagem da Instituição">
+                    <div class="profile-info">
+                        <h2><%= instituicao.nome %></h2>
+                        <p><strong>Localização:</strong> <%= instituicao.localizacao %></p>
+                        <p><strong>Email:</strong> <%= instituicao.email %></p>
+                        <p><strong>Contato:</strong> <%= instituicao.contato %></p>
+                        <p><strong>Gerente:</strong> <%= instituicao.gerente %></p>
+                        <p><strong>Descrição:</strong> <%= instituicao.descricao %></p>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
     </div>
 
-      
-  </div>
     <footer>
         <%- include('./partials/footer') %>
     </footer>
 </body>
 </html>
-
