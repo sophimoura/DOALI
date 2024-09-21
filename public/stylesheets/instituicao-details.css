@@ -25,8 +25,9 @@ h1 {
 h3 {
     margin-top: 40px;
     text-align: center;
-    font-weight: 400;
-    color: #555; /* Cor mais suave */
+    font-weight: 600;
+    color:  #0066cc;; /* Cor mais suave */
+    font-style: bold;
 }
 
 .card {
@@ -100,3 +101,29 @@ footer {
         padding: 10px; /* Ajusta o padding para telas menores */
     }
 }
+
+.profile-pic {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    width: 200px; /* Tamanho menor da imagem */
+    height: 200px; /* Tamanho menor da imagem */
+    border-radius: 50%; /* Faz a imagem ficar redonda */
+    object-fit: cover; /* Cobre o espaço da imagem */
+    border: 2px solid #000000; /* Borda da imagem */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.back-button {
+    background-color: #ccc; /* Cor do botão de voltar */
+    color: #333;
+    margin-top: 10px; /* Espaço acima do botão */
+    padding: 10px; /* Ajustado para ser consistente */
+    width: 100%; /* Mantém a largura total */
+  }
+  
+  .back-button:hover {
+    background-color: #bbb; /* Cor ao passar o mouse */
+  }

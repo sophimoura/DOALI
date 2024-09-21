@@ -9,7 +9,13 @@
   
   <div class="container">
     <h1><%= instituicao.nome %></h1>
-    
+
+    <div class="profile-pic">
+      <% if (instituicao.foto) { %>
+        <img src="<%= instituicao.foto %>" alt="Foto da Instituição">
+      <% } %>
+    </div>
+
     <div class="card">
       <p><strong>Email:</strong> <%= instituicao.email %></p>
       <p><strong>Contato:</strong> <%= instituicao.contato %></p>
@@ -39,21 +45,24 @@
         <label>Gerente:</label>
         <input type="text" name="gerente" value="<%= instituicao.gerente %>" required>
 
+        <label>Foto (URL):</label>
+        <input type="text" name="foto" value="<%= instituicao.foto %>" placeholder="URL da foto" required>
+
         <button type="submit">Salvar Alterações</button>
       </form>
     </div>
 
-    <div class="card">
+    <div class="card-e">
       <form action="/instituicao/excluir/<%= instituicao._id %>" method="POST">
         <button type="submit" class="btn btn-danger">Excluir Instituição</button>
       </form>
     </div>
 
     <!-- Botão de Voltar -->
-    <div class="back-button">
-      <a href="/instituicao" class="btn btn-secondary">Voltar</a>
-    </div>
-  </div>
+    <form action="/instituicao" method="GET">
+      <button type="submit" class="back-button">Voltar para Instituições</button>
+    </form>
+</div>
 
   <%- include('./partials/footer') %>
 </body>

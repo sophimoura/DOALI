@@ -19,10 +19,10 @@ router.get('/:id', async (req, res) => {
 
 // Editar informações da instituição
 router.post('/editar/:id', async (req, res) => {
-  const { nome, email, contato, localizacao, projetoSocial, gerente } = req.body;
+  const { nome, email, contato, localizacao, projetoSocial, gerente, foto } = req.body; // Adicione 'foto'
 
   try {
-    await Instituicao.findByIdAndUpdate(req.params.id, { nome, email, contato, localizacao, projetoSocial, gerente });
+    await Instituicao.findByIdAndUpdate(req.params.id, { nome, email, contato, localizacao, projetoSocial, gerente, foto }); // Adicione 'foto'
     res.redirect(`/instituicao/${req.params.id}`);
   } catch (error) {
     res.status(400).send('Erro ao editar instituição');

@@ -9,7 +9,7 @@ const instituicaoSchema = new mongoose.Schema({
   localizacao: { type: String, required: true },
   projetoSocial: { type: String, required: true },
   gerente: { type: String, required: true },
-  foto: String // Campo para a foto
+  foto: { type: String, required: true } // Campo para a foto
 });
 
 module.exports = mongoose.model('Instituicao', instituicaoSchema);

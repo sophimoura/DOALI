@@ -21,12 +21,12 @@
 
         <!-- Barra de pesquisa -->
         <div class="search-bar">
-            <input type="text" placeholder="Pesquisar Instituição por nome ou por localização...">
+            <input id="search-input" type="text" placeholder="Pesquisar Instituição por nome ou por localização...">
             <select id="filter-select">
                 <option value="localizacao">Localização</option>
                 <option value="nome">Nome</option>
             </select>
-            <button type="button">Buscar</button>
+            <button type="button" id="search-button">Buscar</button>
         </div>
 
         <!-- Lista de perfis -->
@@ -40,7 +40,7 @@
                         <p><strong>Email:</strong> <%= instituicao.email %></p>
                         <p><strong>Contato:</strong> <%= instituicao.contato %></p>
                         <p><strong>Gerente:</strong> <%= instituicao.gerente %></p>
-                        <p><strong>Descrição:</strong> <%= instituicao.descricao %></p>
+                        <p><strong>Projeto Social:</strong> <%= instituicao.projetoSocial %></p>
                     </div>
                 </div>
             <% }) %>
@@ -51,4 +51,16 @@
         <%- include('./partials/footer') %>
     </footer>
 </body>
+
+<script>
+    document.getElementById('search-button').addEventListener('click', function() {
+        const query = document.getElementById('search-input').value;
+        const filter = document.getElementById('filter-select').value;
+
+        // Redireciona para a rota de busca com parâmetros na URL
+        window.location.href = `/buscar?filtro=${filter}&query=${query}`;
+    });
+</script>
+
+
 </html>

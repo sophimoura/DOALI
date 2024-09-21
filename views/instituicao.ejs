@@ -12,6 +12,11 @@
     </header>
 
     <main class="container">
+
+        <div class="popup" id="popup-sucesso">
+            Cadastro realizado com sucesso!
+        </div>
+
         <!-- Boas-vindas -->
         <section class="boas-vindas-card">
             <h2 class="titulointr">Bem-vinda, Instituição Parceira!</h2>
@@ -63,5 +68,27 @@
     <footer>
         <%- include('./partials/footer') %>
     </footer>
+
+    <script>
+        // Verifica se o parâmetro 'success' está presente na URL
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success')) {
+            const popup = document.getElementById('popup-sucesso');
+            popup.textContent = 'Cadastro realizado com sucesso! Faça login para visualizar o seu perfil.'; // Altera o texto
+            popup.classList.add('show'); // Mostra o pop-up
+    
+            // Define o tempo para esconder o pop-up após 5 segundos
+            setTimeout(() => {
+                popup.classList.add('hide'); // Adiciona a classe 'hide' para a transição de desaparecimento
+            }, 5000); // 5 segundos (5000 ms)
+            
+            // Remove completamente o popup do DOM após 5,5 segundos para evitar elementos invisíveis na tela
+            setTimeout(() => {
+                popup.remove();
+            }, 5500);
+        }
+    </script>
+
+
 </body>
 </html>

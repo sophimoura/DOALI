@@ -52,6 +52,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  margin: 0 auto;
 }
 
 .search-bar input {
@@ -84,6 +85,9 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
+  max-width: 1200px; /* Limite de largura para centralizar */
+  margin: 0 auto;    /* Centraliza o grid */
+  padding: 50px;
 }
 
 .profile-card {
