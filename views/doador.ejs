@@ -15,13 +15,13 @@
             <h2 class="titulointr">Bem-vindo, Doador Parceiro!</h2>
             <h3 class="descricao">Vamos falar um pouco da importância do seu papel no Doali.</h3>
             <div class="boas-vindas"><hr>
-                <p>O papel do doador no Doali é fundamental para promover uma cultura de solidariedade e apoio mútuo.</p>
+                <p>O papel do doador no Doali é fundamental para promover uma cultura de solidariedade e apoio mútuo...</p>
             </div>
         </div>
 
         <!-- Barra de pesquisa -->
         <div class="search-bar">
-            <input id="search-input" type="text" placeholder="Pesquise Instituições pelo nome ou pela localização...">
+            <input id="search-input" type="text" placeholder="Pesquisar Instituição por nome ou por localização...">
             <select id="filter-select">
                 <option value="localizacao">Localização</option>
                 <option value="nome">Nome</option>
@@ -29,9 +29,9 @@
             <button type="button" id="search-button">Buscar</button>
         </div>
 
-        <!-- lista de perfis-->
+        <!-- Lista de perfis -->
         <div class="profiles">
-            <% if (instituicoes.length === 0) { %>
+            <% if (instituicoes && instituicoes.length === 0) { %>
                 <p class="no-results">Nenhuma instituição encontrada.</p>
             <% } else { %>
                 <% instituicoes.forEach(instituicao => { %>
@@ -49,7 +49,7 @@
                 <% }) %>
             <% } %>
         </div>
-    
+    </div>
 
     <footer>
         <%- include('./partials/footer') %>
