@@ -66,8 +66,8 @@ button {
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
-    margin-top: 20px; /* Espaço acima do botão */
-    transition: background-color 0.3s; /* Transição suave */
+    margin-top: 20px; 
+    transition: background-color 0.3s; 
 }
 
 button:hover {

@@ -2,36 +2,36 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #f7f9fc; /* Fundo claro */
-    color: #333; /* Texto escuro para contraste */
+    background-color: #f9f9f9; 
 }
 
 .container {
     max-width: 800px;
     margin: 50px auto;
     padding: 30px;
-    background-color: #ffffff; /* Fundo branco */
+    background-color: #ffffff; 
     border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
 }
 
 h1 {
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #0066cc; /* Cor do título */
+    color: #0066cc; 
 }
 
-h3 {
+.editar {
+    font-size: 30px;
     margin-top: 40px;
     text-align: center;
     font-weight: 600;
-    color:  #0066cc;; /* Cor mais suave */
+    color:  #0066cc;
     font-style: bold;
 }
 
 .card {
-    background-color: #f9f9f9; /* Fundo suave para os cards */
+    background-color: #f9f9f9;
     border-radius: 10px;
     padding: 20px;
     margin: 20px 0;
@@ -51,7 +51,7 @@ input[type="text"], input[type="email"], input[type="password"] {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
-    border: 1px solid #ccc; /* Borda clara */
+    border: 1px solid #ccc; 
     border-radius: 5px;
     background-color: #ffffff;
     color: #333;
@@ -60,11 +60,11 @@ input[type="text"], input[type="email"], input[type="password"] {
 
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
     outline: none;
-    border-color: #0066cc; /* Cor da borda ao focar */
+    border-color: #0066cc;
 }
 
 button {
-    background-color: #0066cc; /* Cor do botão */
+    background-color: #0066cc; 
     border: none;
     color: #ffffff;
     padding: 12px 15px;
@@ -76,7 +76,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056a1; /* Cor ao passar o mouse */
+    background-color: #0056a1; 
     transform: translateY(-2px);
 }
 
@@ -85,11 +85,11 @@ button:hover {
 /* Adiciona responsividade */
 @media (max-width: 480px) {
     h1 {
-        font-size: 2em; /* Ajusta o tamanho do título em telas menores */
+        font-size: 2em; 
     }
 
     button {
-        padding: 10px; /* Ajusta o padding para telas menores */
+        padding: 10px;
     }
 }
 
@@ -99,22 +99,22 @@ button:hover {
 }
 
 .profile-pic img {
-    width: 200px; /* Tamanho menor da imagem */
-    height: 200px; /* Tamanho menor da imagem */
-    border-radius: 50%; /* Faz a imagem ficar redonda */
-    object-fit: cover; /* Cobre o espaço da imagem */
-    border: 2px solid #000000; /* Borda da imagem */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 2px solid #000000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .back-button {
-    background-color: #ccc; /* Cor do botão de voltar */
+    background-color: #ccc; 
     color: #333;
-    margin-top: 10px; /* Espaço acima do botão */
-    padding: 10px; /* Ajustado para ser consistente */
-    width: 100%; /* Mantém a largura total */
+    margin-top: 10px; 
+    padding: 10px;
+    width: 100%;
   }
   
   .back-button:hover {
-    background-color: #bbb; /* Cor ao passar o mouse */
+    background-color: #bbb; 
   }

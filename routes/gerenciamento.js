@@ -19,7 +19,7 @@ router.get('/:id', async (req, res) => {
 
 // Editar informações da instituição
 router.post('/editar/:id', async (req, res) => {
-  const { nome, email, contato, localizacao, projetoSocial, gerente, foto } = req.body; // Adicione 'foto'
+  const { nome, email, contato, localizacao, projetoSocial, gerente, foto } = req.body; 
 
   try {
     await Instituicao.findByIdAndUpdate(req.params.id, { nome, email, contato, localizacao, projetoSocial, gerente, foto }); // Adicione 'foto'
@@ -33,7 +33,7 @@ router.post('/editar/:id', async (req, res) => {
 router.post('/excluir/:id', async (req, res) => {
   try {
     await Instituicao.findByIdAndDelete(req.params.id);
-    res.redirect('/onde-doar'); // Redireciona para a página de instituições
+    res.redirect('/instituicao'); 
   } catch (error) {
     res.status(400).send('Erro ao excluir instituição');
   }

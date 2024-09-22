@@ -8,13 +8,13 @@ body {
 
 header {
   background-color: #538be0; 
-  height: 70px; 
+  height: 80px; 
   top: 0; 
   width: 100%;
 }
 
 
-.container {
+.container-1 {
   display: flex;
   justify-content: space-between;
   align-items: center;

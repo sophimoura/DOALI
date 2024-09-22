@@ -2,7 +2,6 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f4f4f9;
-  color: #2c3e50;
   margin: 0;
   padding: 0;
 }
@@ -30,7 +29,7 @@ header {
 }
 
 .titulointr {
-  font-size: 28px;
+  font-size: 30px;
   color: #2980b9;
   margin-bottom: 20px;
 }
@@ -47,7 +46,7 @@ header {
 }
 
 .btn {
-  background-color: #3498db;
+  background-color: #F0BB32;
   color: white;
   padding: 10px 30px;
   text-decoration: none;
@@ -56,7 +55,7 @@ header {
 }
 
 .btn:hover {
-  background-color: #2980b9;
+  background-color: #F0BB32;
 }
 
 /* Estilo do projeto */
@@ -69,13 +68,13 @@ header {
 }
 
 .texto {
-  font-size: 22px;
+  font-size: 20px;
   color: #2980b9;
   margin-bottom: 20px;
 }
 
 .descricao-recurso {
-  font-size: 16px;
+  font-size: 18px;
   color: #7f8c8d;
 }
 

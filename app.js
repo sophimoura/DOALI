@@ -7,7 +7,6 @@ var session = require('express-session');
 
 var indexRouter = require('./routes/index');
 var doacoesRouter = require('./routes/doacoes');
-var ajudaRouter = require('./routes/ajuda');
 var sounovoRouter = require('./routes/sounovo');
 var doadorRouter= require('./routes/doador');
 var instituicaoRouter = require('./routes/instituicao');
@@ -45,7 +44,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/doacoes', doacoesRouter);
-app.use('/ajuda', ajudaRouter);
 app.use('/sounovo', sounovoRouter);
 app.use('/doador', doadorRouter);
 app.use('/instituicao',instituicaoRouter);

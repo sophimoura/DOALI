@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Doali</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheets/index.css">
 </head>
 
@@ -12,36 +12,24 @@
     
     <%- include('./partials/header') %>
 
-    <!-- Carrossel-->
-    <div class="container mt-4">
-        <div id="carrossel" class="carousel slide" data-bs-ride="carousel">
-          
-            
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/slide1.png" class="d-block w-100 rounded" alt="Slide 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/slide2.png" class="d-block w-100 rounded" alt="Slide 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/slide3.png" class="d-block w-100 rounded" alt="Slide 3">
-                </div>
-            </div>
 
-          
-            <a class="carousel-control-prev" href="#carrossel" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carrossel" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Próximo</span>
-            </a>
-        </div>
+
+    <!-- Boas-vindas -->
+<section class="boasVindas">
+        
+    <div class="mensagem">
+            <h2 class="titulo">Bem-vindo ao Doali!</h2>
+            <p class="descricao">
+            O Doali conecta doadores com instituições de causas sociais.<br>
+            Explore o site para descobrir projetos e apoiar as causas que você valoriza. </p>
     </div>
 
-    <!-- Frase -->
+    <div class="imagem">
+    <img src="images/lampada.png" alt="imagem">
+    </div>
+</section>
+
+    <!-- Frase -->  
     <div class="blocoPrincipal">
         <h2 class="frase">COMECE SUA TRAJETÓRIA CONOSCO</h2>
         <hr class="linhaSeparadora">
@@ -75,9 +63,11 @@
         <%- include('./partials/footer') %>
     </footer>
 
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
 </body>
 
 </html>
