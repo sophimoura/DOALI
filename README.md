@@ -17,7 +17,7 @@ O **Doali** é uma plataforma inovadora dedicada a facilitar a conexão entre do
       <li><strong>Node.js</strong> para desenvolvimento web;</li>
       <li><strong>EJS</strong> (Embedded JavaScript Templating) como template engine.</li>
     </ul>
-    <p>🛠 <strong>IDE utilizada:</strong> Replit</p>
+    <p>🛠 <strong>IDE utilizada:</strong>VS Code</p>
     <p>🏗 <strong>O projeto está na primeira etapa de desenvolvimento e sujeito a modificações.</strong></p>
   </div>
 </div>
